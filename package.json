@@ -1,0 +1,25 @@
+{
+  "name": "customvpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "devbuild": "pm2 stop all && vuepress build src && pm2 start all",
+    "devstatic": "pm2 serve dist 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.10",
+    "css-loader": "^2.1.1",
+    "pm2": "^3.4.1",
+    "style-loader": "^0.23.1",
+    "vuetify": "^1.5.9"
+  }
+}
